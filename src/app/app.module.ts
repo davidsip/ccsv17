@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MinistriesComponent } from './ministries.component';
 import { ContactUsComponent } from './contact-us.component';
 import { CarouselComponent } from './carousel.component';
+import { EventsComponent } from './events.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CarouselComponent } from './carousel.component';
     MinistriesComponent,
     ContactUsComponent,
     CarouselComponent,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,

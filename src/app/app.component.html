@@ -1,14 +1,68 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale = 1">
-
 </head>
-
-
-<body>
-  <div class="container-logo">
-    <img src="./assets/CCSV.png" alt="logo">
+<!-- new stuff from Andria -->
+<div class="container">           <!-- Container establishes !-->
+	<body>			                    <!-- Vertical Menu !-->
+  <div class="navigation">        <!--  Navigation Bar  -->
+    <nav>
+      <a routerLink = "/home" routerLinkActive ="active" (click)="switchHome()">HOME</a>
+      <a routerLink = "/about" routerLinkActive ="active" (click)="switchAbout()">ABOUT US</a>
+      <a routerLink = "/ministries" routerLinkActive ="active" (click)="switchMinistries()">MINISTRIES</a>
+      <a routerLink = "/events" routerLinkActive ="active" (click)="switchEvents()">EVENTS</a>
+      <a routerLink = "/contact-us" routerLinkActive ="active" (click)="switchContact()">CONTACT US</a>
+    </nav>
   </div>
+  <!-- Parallax image block -->
+  <div *ngIf="toggleHome" class="parallaxHome">
+    <div class="caption">
+      <img src="./assets/CCSV.png">
+    </div>
+  </div>
+  <div *ngIf="toggleAbout" class="parallaxAbout">
+    <div class="caption">
+      <img src="./assets/CCSV-About.png">
+    </div>
+  </div>
+  <div *ngIf="toggleMinistries" class="parallaxMinistries">
+    <div class="caption">
+      <img src="./assets/CCSV-Ministries.png">
+    </div>
+  </div>
+    <div *ngIf="toggleEvents" class="parallaxEvents">
+    <div class="caption">
+      <img src="./assets/CCSV-Events.png">
+    </div>
+  </div>
+  <div *ngIf="toggleContact" class="parallaxContact">
+    <div class="caption">
+      <img src="./assets/CCSV-Contact.png">
+    </div>
+  </div>
+<!-- Parallax end -->
+
+<!-- Start of Content !-->
+  <router-outlet></router-outlet>
+<!-- end of content !-->
+
+   <div class="footer">
+    Christian Church of Simi Valley
+    <br>58A Moreland Road, Simi Valley, CA 93065
+ 		<br>(000) 000-0000
+ 		<br>西米谷基督教會日曆 (secretary.ccsv.us@gmail.com)
+   </div>
+	</body>
+</div>
+
+
+<!-- end new stuff -->
+
+
+
+  <!-- <div class="container-logo">
+    <img src="./assets/CCSV.png" alt="logo">
+  </div> -->
 
  <!-- <div class="navigation-bar">
       <div class="container">
@@ -63,24 +117,3 @@
 
       </div>
 </div> -->
-      <div class="navigation">
-        <nav>
-          <a routerLink = "/home" routerLinkActive ="active">Home</a>
-          <a routerLink = "/about" routerLinkActive ="active">About Us</a>
-          <a routerLink = "/ministries" routerLinkActive ="active">Ministries</a>
-          <a routerLink = "/contact-us" routerLinkActive ="active">Contact Us</a>
-        </nav>
-      </div>
-
-
-      <router-outlet></router-outlet>
-
-
-  <div class="container-footer">
-    <h4>
-      58A Moreland, Simi Valley, CA
-    </h4>
-  </div>
-
-
-</body>

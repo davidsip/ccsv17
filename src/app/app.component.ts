@@ -33,13 +33,52 @@ export class AppComponent {
   this.selectedItem = item;
 }
 
-
-
-
   showHomeItems = false;
   showAboutItems = false;
   showMinistryItems = false;
   showContactItems = false;
+
+  toggleHome = true;
+  toggleAbout = false;
+  toggleMinistries = false;
+  toggleEvents = false;
+  toggleContact = false;
+
+  switchHome() {
+    this.toggleHome = true;
+    this.toggleAbout = false;
+    this.toggleMinistries = false;
+    this.toggleEvents = false;
+    this.toggleContact = false;
+  }
+  switchAbout() {
+    this.toggleHome = false;
+    this.toggleAbout = true;
+    this.toggleMinistries = false;
+    this.toggleEvents = false;
+    this.toggleContact = false;
+  }
+  switchMinistries() {
+    this.toggleHome = false;
+    this.toggleAbout = false;
+    this.toggleMinistries = true;
+    this.toggleEvents = false;
+    this.toggleContact = false;
+  }
+  switchEvents() {
+    this.toggleHome = false;
+    this.toggleAbout = false;
+    this.toggleMinistries = false;
+    this.toggleEvents = true;
+    this.toggleContact = false;
+  }
+  switchContact() {
+    this.toggleHome = false;
+    this.toggleAbout = false;
+    this.toggleMinistries = false;
+    this.toggleEvents = false;
+    this.toggleContact = true;
+  }
 
 
 
