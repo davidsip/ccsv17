@@ -1,0 +1,30 @@
+.para{
+	background-image: url("CCSV3.png") ;
+	height: 600px;
+position: relative;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.para2{
+	background-image: url("CCSV2.png");
+	height: 500px;
+position: relative;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.content{
+	height: auto;
+	margin-right: 15%;
+	margin-left: 15%;
+	width: 65%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: white;
+}
+p{
+	margin-top: 0;
+}

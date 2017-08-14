@@ -1,0 +1,308 @@
+nav a:link{
+  color: #607D8B;
+}
+nav a:hover{
+  color: #039be5;
+  background-color:white;
+  text-decoration:none;
+  text-shadow: 2px 2px 5px #607D8B;
+}
+nav a.active{
+  color: #039be5;
+}
+nav a.visited{
+  color: black;
+}
+
+/*new css*******************************************************************/
+
+.container{
+/*Inner Container*/
+	min-height: 100%;
+	position:relative !important;
+	width: 100%;
+	background-color: white;
+	margin-bottom: -80px;
+	overflow: auto;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  border: none;
+  overflow-y: auto;
+}
+
+.container:after{
+	/*making space for the footer*/
+	content: "";
+    display: block;
+    height: 80px;
+}
+
+/*UL is for vertical menu bar*/
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    float: left;
+    color: black;
+}
+
+nav a {
+    display: inline-block;
+    padding:  10px 20px;
+    text-decoration: none;
+    margin-left:0%;
+    margin-right: 0%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+
+.menu{
+	position: fixed;
+}
+/* End of vertical menu bar*/
+
+body {
+	font-family: 'Nobile', sans-serif;
+	color: black;
+}
+
+.container p {
+	font-size: 14;
+}
+
+.content{
+	height: auto;
+	background-color: white;
+	margin-right: 15%;
+	margin-left: 15%;
+	width: 65%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.caption {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: center;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+.parallaxHome {
+    /* The image used */
+    background-image: url("CCSV1.png");
+
+    height: 500px;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  -webkit-animation: fade 2s; /* Safari, Chrome and Opera > 12.1 */
+}
+
+.parallaxAbout {
+    /* The image used */
+    background-image: url("CCSV5.png");
+
+    height: 500px;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  -webkit-animation: fade 2s; /* Safari, Chrome and Opera > 12.1 */
+}
+.parallax3 {
+    /* The image used */
+    background-image: url("CCSV3.png");
+
+    height: 500px;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallaxMinistries {
+    /* The image used */
+    background-image: url("CCSV3.png");
+
+    height: 500px;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  -webkit-animation: 2s fade; /* Safari, Chrome and Opera > 12.1 */
+}
+
+.parallaxContact {
+    /* The image used */
+    background-image: url("CCSV4.png");
+
+    height: 500px;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  -webkit-animation:  2s fade; /* Safari, Chrome and Opera > 12.1 */
+
+}
+
+.parallaxEvents {
+    /* The image used */
+    background-image: url("CCSV2.png");
+
+    height: 500px;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  -webkit-animation: 2s fade; /* Safari, Chrome and Opera > 12.1 */
+
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fade {
+  0%   { opacity:0; }
+  100% { opacity:1; }
+}
+
+.footer {
+    height: 80px;
+    background: #DCDCDC;
+	padding: 15px;
+	font-family: 'Nobile', sans-serif;
+	color: darkgrey;
+	font-size: 12;
+	position: relative;
+	bottom: 0px;
+  letter-spacing: 2px;
+}
+
+
+/*body {
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  position: fixed;
+  border: none;
+  overflow-y: auto;
+
+}*/
+/*.container-logo{
+  width: 100%;
+  position: relative;
+  background-color: white;
+  margin: auto;
+}*/
+/*img {
+  height: 30%;
+  width: 30%;
+  margin: auto;
+  display: block;
+}*/
+
+/*.navigation{
+  background-color: #white;
+  text-align: center;
+  width: 100%;
+
+}*/
+/*nav a{
+  padding: 5px 20px;
+  text-decoration: none;
+  margin-top: 1px;
+  display: inline-block;
+  background-color: #white;
+  border-radius: 4px;
+  font-family: Arial;
+  font-weight: bold;
+}*/
+
+/*.container-footer{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: lightgrey;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+}*/
+/*h4{
+  position: relative;
+}*/
+
+
+/*.items{                             //dropdown stuff*****************************
+  text-align: center;
+}
+.dropdown-content{
+
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  z-index: 1;
+
+
+}
+
+.about-content{
+
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  z-index: 1;
+
+
+}
+.dropbutton-about{
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.dropdown{
+  float: left;
+  overflow: hidden;
+  position: relative;
+}******************************************************************/
