@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Image } from './image.interface';
+// import { Image } from './image.interface';
 
 @Component({
   selector: 'app-carousel',
